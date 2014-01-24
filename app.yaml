@@ -1,0 +1,21 @@
+application: sentence-parser
+version: 1
+runtime: php
+api_version: 1
+threadsafe: yes
+
+handlers:
+- url: /css
+  static_dir: css
+
+- url: /js
+  static_dir: js
+  
+- url: /gfx
+  static_dir: gfx
+  
+- url: /
+  script: index.html
+
+- url: .*
+  script: 404.html

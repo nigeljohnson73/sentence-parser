@@ -1,0 +1,282 @@
+/**********************************************************************************************************
+ * NJP Application custom CSS - taken for the JQuery Mobile demos site
+ */
+
+/* Header */
+.njp-app .njp-header {
+	background: #fff;
+	border-top: 4px solid #ccc;
+	border-bottom-color: #eee;
+}
+.njp-app .njp-header h2 {
+	padding: .4em 0 .1em;
+	margin: 0 3em;
+}
+.njp-app .njp-header h2 a {
+	display: inline-block;
+	text-decoration: none;
+	min-height: 40px;
+}
+.njp-app .njp-header h2 img {
+	display: block;
+	width: 140px;
+	height: auto;
+}
+.njp-app .njp-header h2  img {
+	display: inline-block;
+}
+.njp-app .njp-header p {
+	position: absolute;
+	bottom: -2em;
+	left: 1em;
+	margin: 0;
+	color: #666;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+	text-transform: uppercase;
+	display:none;
+}
+.njp-app .njp-header .ui-btn {
+	width: 2em;
+	height: 2em;
+	background: none;
+	border: 0;
+	top: 50%;
+	margin-top: -1em;
+	-webkit-border-radius: .3125em;
+	border-radius: .3125em;
+	opacity: .4;
+	filter: Alpha(Opacity=40);
+}
+
+/* Footer */
+.njp-app .njp-footer.ui-footer {
+	position: absolute;
+	bottom: 0;
+	padding-bottom: 0;
+}
+.njp-app .njp-footer {
+	border-top: 1px solid #ccc;
+}
+.njp-app .njp-footer p {
+	font-size: .8em;
+	color: #999;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+	margin: 0 1.25em 1.25em;
+}
+.njp-app .njp-footer p:first-child {
+	font-size: 1em;
+	color: #666;
+	font-weight: 400;
+	margin: 1em 1em .75em;
+}
+
+/* Content */
+.njp-app .njp-content {
+	padding-top: 3em;
+}
+.njp-app .njp-content h1,
+.njp-app .njp-content h2,
+.njp-app .njp-content h3,
+.njp-app .njp-content p,
+.njp-app .njp-content ul li,
+.njp-app .njp-content a {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+}
+.njp-app .njp-content h1 {
+	font-size: 2.4em;
+	margin: 0 0 .625em;
+}
+.njp-app .njp-content h2 {
+	color: #ccc;
+	background-color: transparent;
+	border-bottom: 1px solid #ddd;
+	font-size: 1.6em;
+	padding-bottom: .2em;
+	margin: 0 0 .7375em;
+}
+.njp-app .njp-content h3 {
+	color: #ccc;
+	background-color: transparent;
+	font-size: 1.4em;
+	margin: 0 0 1em;
+}
+.njp-app .njp-content p {
+	font-size: 1.2em;
+	line-height: 1.5;
+}
+.njp-app .njp-content ul:not(.njp-list) li {
+	font-size: 1.2em;
+	line-height: 1.5;
+}
+.njp-app .njp-content p {
+	margin: 0 0 1.25em;
+}
+.njp-app .njp-content ul,
+.njp-app .njp-content ol {
+	padding-left: 1.3em;
+}
+.njp-app .njp-content .ui-listview {
+	padding-left: 0;
+}
+.njp-app .njp-content a,
+.njp-app .njp-content p a,
+.njp-app .njp-content ul:not(.njp-list) li a {
+	font-weight: 400;
+	text-decoration: none;
+}
+.njp-app .njp-content strong {
+	font-weight: 700;
+}
+.njp-app .njp-content p strong {
+	font-weight: 400;
+}
+
+/* Lists */
+.njp-app .njp-list .ui-btn,
+.njp-app .njp-list .ui-btn:visited,
+.njp-app .njp-list .ui-li-divider {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+	text-shadow: none !important;
+}
+.njp-app .njp-list .ui-btn:hover,
+.njp-app .njp-list .ui-btn:active {
+	color: #3388cc;
+}
+.njp-app .njp-list .ui-btn.ui-btn-active {
+	color: #fff;
+}
+.njp-app .njp-list .ui-li-divider {
+	color: #ccc;
+}
+
+@media (min-width: 70em) {
+	.njp-app .njp-header h2 {
+		padding: 1em 0 .7em;
+		margin: 0 1em 0 3%;
+		text-align: left;
+	}
+	.njp-app .njp-header h2 img {
+		width: 275px;
+		height: 78px;
+	}
+	.njp-app .njp-header p {
+		bottom: auto;
+		left: auto;
+		top: 50%;
+		right: 15%;
+		font-size: 1.2em;
+		margin-top: -.625em;
+		display:block;
+	}
+	.njp-app .njp-footer p {
+		float: right;
+		margin: 1.5em 3% 1.5em 1.5em;
+	}
+	.njp-app .njp-footer p:first-child {
+		float: left;
+		margin: 1.25em 1.25em 1.25em 3%;
+	}
+	.njp-app .njp-content {
+		width: 83%;
+		padding-top: 1em;
+		padding-bottom: 1em;
+padding-left: 1%;
+		padding-right: 1%;
+		float: right;
+	}
+    .njp-app .njp-content.njp-fullwidth {
+		width: auto;
+		padding-left: 1%;
+		padding-right: 1%;
+		float: none;
+	}
+}
+
+body,input,select,textarea,button,.ui-btn,
+.njp-app .njp-content a.ui-btn {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+}
+
+.njp-app .njp-content .ui-btn {
+	background-color:#fafafa;
+}
+/* Stuffs up the ace editor stuff, so swtich off white space breaking */
+
+textarea {
+	white-space:normal;
+}
+
+#lhs,#rhs {
+	padding: 10px;
+	border: solid 1px #ccc;
+	border-radius: 5px;
+	text-align: center;
+}
+
+#lhs {
+	float: left;
+	width:325px;
+}
+
+#rhs {
+	margin-left: 360px;
+}
+
+#the-structure {
+	text-align:left;
+	position: relative;
+	width:100%;
+	height:460px;
+	margin-bottom:10px;
+	border:solid 1px #999;
+}
+
+#log {
+	margin-top:0px;
+	text-align: left;
+	padding: 10px;
+	border: solid 1px #ccc;
+	background-color: #fafafa;
+	color:#666;
+	border-radius: 5px;
+}
+
+div.apperror,div.appwarn,div.appok {
+	margin-top: 10px;
+	margin-bottom: 10px;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
+	border-radius: 5px;
+	padding-left: 10px;
+	width: 300px;
+}
+
+.apperror p,.appwarn p,.appok p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+div.apperror {
+	background: #fcc;
+	border: solid 1px #c33;
+	color: #c33;
+}
+
+div.appwarn {
+	background: #ffefd5;
+	border: solid 1px #930;
+	color: #930;
+}
+
+div.appok {
+	background: #cfc;
+	border: solid 1px #090;
+	color: #090;
+}
