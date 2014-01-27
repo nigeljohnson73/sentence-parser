@@ -20,13 +20,14 @@
 			</h2>
 			<p>Sentence parser in Javascript</p>
 		</div>
+		<!-- /header -->
 
 		<div data-role="main" class="njp-content njp-fullwidth">
 			<div id="lhs">
 				<h2>Your question</h2>
 				<input id="the-question" type="text"
 					placeholder="Enter a question here" autofocus="autofocus" autocomplete="off"></input>
-				<div id="button-panel">
+				<div class="button-panel">
 					<button id="ask-the-question" data-inline="true">Ask</button>
 					<!-- <button id="perform-tests" data-inline="true">Perform Unit Test</button> -->
 				</div>
@@ -47,12 +48,32 @@
 
 
 		<div data-role="footer" data-position="fixed" class="njp-footer">
-			<p>No egos were harmed in the making of this site.</p>
+			<p><a href="#about">About this application</a></p>
 			<p>
 				&copy; 2012 - 2014 Nigel Johnson. All rights reserved.
 			</p>
 		</div>
+		<!-- /footer -->
 
-	</div>
+		<div data-role="panel" id="about" class='njp-content' data-display="overlay">
+		<h2>About this application</h2>
+		<p>No electrons were created or destroyed in the making of this webiste, however some were significantly mamed.</p>
+		<p>This site is the product of a project created to generate a simple sentence parser. The GitHub project can be
+		found <a href="https://github.com/nigeljohnson73/sentence-parser" target="_blank">here</a>. The idea was that I 
+		wanted a really simple and lightweight sentence parser that didn't need sending off to the NLP labs at Berkley. 
+		I needed to extract a few bits from the sentence so a response could be formulated. The output would then be used 
+		in my <a href="http://nigeknows.com" target="_blank">Nige Knows</a> website.</p>
+		<p>The <a href="http://www.google.com/fonts" target="_blank">Google fonts API</a> supplied the "Open Sans" fonts 
+		that are used throughout the site.</p>
+		<p><a href="http://ace.c9.io/" target="_blank">Ace</a> provided the code renderificator used to modify the text 
+		area for the javascript code in the parsing structure section.</p>
+		<p>The overall style was extracted from the <a href="http://demos.jquerymobile.com/1.4.0/" target="_blank">JQuery 
+		Mobile</a> demos website and modified a bit from there.</p>
+		<div class="button-panel">
+			<button data-inline="true" data-rel="close">Ok</button>
+		</div>
+			<!-- panel content goes here -->
+		</div><!-- /panel -->
+  	</div>
 </body>
 </html>

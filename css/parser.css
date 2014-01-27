@@ -1,30 +1,37 @@
 /**********************************************************************************************************
  * NJP Application custom CSS - taken for the JQuery Mobile demos site
  */
-
+body,.njp-app,.njp-content {
+	background-color: #fefefe;
+}
 /* Header */
 .njp-app .njp-header {
-	background: #fff;
+	background-color: #fff;
 	border-top: 4px solid #ccc;
 	border-bottom-color: #eee;
 }
+
 .njp-app .njp-header h2 {
 	padding: .4em 0 .1em;
 	margin: 0 3em;
 }
+
 .njp-app .njp-header h2 a {
 	display: inline-block;
 	text-decoration: none;
 	min-height: 40px;
 }
+
 .njp-app .njp-header h2 img {
 	display: block;
 	width: 140px;
 	height: auto;
 }
+
 .njp-app .njp-header h2  img {
 	display: inline-block;
 }
+
 .njp-app .njp-header p {
 	position: absolute;
 	bottom: -2em;
@@ -34,8 +41,9 @@
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 300;
 	text-transform: uppercase;
-	display:none;
+	display: none;
 }
+
 .njp-app .njp-header .ui-btn {
 	width: 2em;
 	height: 2em;
@@ -46,18 +54,22 @@
 	-webkit-border-radius: .3125em;
 	border-radius: .3125em;
 	opacity: .4;
-	filter: Alpha(Opacity=40);
+	filter: Alpha(Opacity =   40);
 }
 
 /* Footer */
 .njp-app .njp-footer.ui-footer {
+	background-color: #eee;
 	position: absolute;
 	bottom: 0;
 	padding-bottom: 0;
+	position: absolute;
 }
+
 .njp-app .njp-footer {
 	border-top: 1px solid #ccc;
 }
+
 .njp-app .njp-footer p {
 	font-size: .8em;
 	color: #999;
@@ -65,6 +77,14 @@
 	font-weight: 300;
 	margin: 0 1.25em 1.25em;
 }
+
+.njp-app .njp-footer a {
+	font-size: 1em;
+	color: #090;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+}
+
 .njp-app .njp-footer p:first-child {
 	font-size: 1em;
 	color: #666;
@@ -73,22 +93,22 @@
 }
 
 /* Content */
-.njp-app .njp-content {
-	padding-top: 3em;
+.njp-app .njp-content:not(#about) {
+	padding-top: 1em;
+	padding-bottom: 1em;
 }
-.njp-app .njp-content h1,
-.njp-app .njp-content h2,
-.njp-app .njp-content h3,
-.njp-app .njp-content p,
-.njp-app .njp-content ul li,
-.njp-app .njp-content a {
+
+.njp-app .njp-content h1,.njp-app .njp-content h2,.njp-app .njp-content h3,.njp-app .njp-content p,.njp-app .njp-content ul li,.njp-app .njp-content a
+	{
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 300;
 }
+
 .njp-app .njp-content h1 {
 	font-size: 2.4em;
 	margin: 0 0 .625em;
 }
+
 .njp-app .njp-content h2 {
 	color: #ccc;
 	background-color: transparent;
@@ -97,63 +117,51 @@
 	padding-bottom: .2em;
 	margin: 0 0 .7375em;
 }
+
 .njp-app .njp-content h3 {
 	color: #ccc;
 	background-color: transparent;
 	font-size: 1.4em;
 	margin: 0 0 1em;
 }
+
 .njp-app .njp-content p {
 	font-size: 1.2em;
 	line-height: 1.5;
 }
-.njp-app .njp-content ul:not(.njp-list) li {
+
+.njp-app .njp-content ul:not (.njp-list ) li {
 	font-size: 1.2em;
 	line-height: 1.5;
 }
+
 .njp-app .njp-content p {
 	margin: 0 0 1.25em;
 }
-.njp-app .njp-content ul,
-.njp-app .njp-content ol {
+
+.njp-app .njp-content ul,.njp-app .njp-content ol {
 	padding-left: 1.3em;
 }
+
 .njp-app .njp-content .ui-listview {
 	padding-left: 0;
 }
-.njp-app .njp-content a,
-.njp-app .njp-content p a,
-.njp-app .njp-content ul:not(.njp-list) li a {
+
+.njp-app .njp-content a,.njp-app .njp-content p a,.njp-app .njp-content ul:not
+	 (.njp-list  ) li a {
 	font-weight: 400;
 	text-decoration: none;
 }
+
 .njp-app .njp-content strong {
 	font-weight: 700;
 }
+
 .njp-app .njp-content p strong {
 	font-weight: 400;
 }
 
-/* Lists */
-.njp-app .njp-list .ui-btn,
-.njp-app .njp-list .ui-btn:visited,
-.njp-app .njp-list .ui-li-divider {
-	font-family: 'Open Sans', sans-serif;
-	font-weight: 300;
-	text-shadow: none !important;
-}
-.njp-app .njp-list .ui-btn:hover,
-.njp-app .njp-list .ui-btn:active {
-	color: #3388cc;
-}
-.njp-app .njp-list .ui-btn.ui-btn-active {
-	color: #fff;
-}
-.njp-app .njp-list .ui-li-divider {
-	color: #ccc;
-}
-
-@media (min-width: 70em) {
+@media ( min-width : 70em) {
 	.njp-app .njp-header h2 {
 		padding: 1em 0 .7em;
 		margin: 0 1em 0 3%;
@@ -170,7 +178,7 @@
 		right: 15%;
 		font-size: 1.2em;
 		margin-top: -.625em;
-		display:block;
+		display: block;
 	}
 	.njp-app .njp-footer p {
 		float: right;
@@ -180,15 +188,12 @@
 		float: left;
 		margin: 1.25em 1.25em 1.25em 3%;
 	}
-	.njp-app .njp-content {
-		width: 83%;
+	.njp-app .njp-content:not(#about) {
 		padding-top: 1em;
-		padding-bottom: 1em;
-padding-left: 1%;
+		padding-left: 1%;
 		padding-right: 1%;
-		float: right;
 	}
-    .njp-app .njp-content.njp-fullwidth {
+	.njp-app .njp-content.njp-fullwidth {
 		width: auto;
 		padding-left: 1%;
 		padding-right: 1%;
@@ -196,31 +201,38 @@ padding-left: 1%;
 	}
 }
 
-body,input,select,textarea,button,.ui-btn,
-.njp-app .njp-content a.ui-btn {
+body,input,select,textarea,button,.ui-btn,.njp-app .njp-content a.ui-btn
+	{
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 300;
 }
 
 .njp-app .njp-content .ui-btn {
-	background-color:#fafafa;
+	background-color: #eee;
 }
 /* Stuffs up the ace editor stuff, so swtich off white space breaking */
-
 textarea {
-	white-space:normal;
+	white-space: normal;
 }
 
-#lhs,#rhs {
+#the-question {
+	background-color: #fff;
+}
+
+#lhs,#rhs,#log {
 	padding: 10px;
-	border: solid 1px #ccc;
+	border: solid 1px #999;
 	border-radius: 5px;
+	text-align: center;
+}
+
+.button-panel {
 	text-align: center;
 }
 
 #lhs {
 	float: left;
-	width:325px;
+	width: 325px;
 }
 
 #rhs {
@@ -228,22 +240,19 @@ textarea {
 }
 
 #the-structure {
-	text-align:left;
+	text-align: left;
 	position: relative;
-	width:100%;
-	height:460px;
-	margin-bottom:10px;
-	border:solid 1px #999;
+	width: 100%;
+	height: 460px;
+	margin-bottom: 10px;
+	border: solid 1px #999;
 }
 
 #log {
-	margin-top:0px;
+	margin-top: 0px;
 	text-align: left;
-	padding: 10px;
-	border: solid 1px #ccc;
-	background-color: #fafafa;
-	color:#666;
-	border-radius: 5px;
+	background-color: #eee;
+	color: #666;
 }
 
 div.apperror,div.appwarn,div.appok {
@@ -259,8 +268,8 @@ div.apperror,div.appwarn,div.appok {
 }
 
 .apperror p,.appwarn p,.appok p {
-	margin-top: 0.5em;
-	margin-bottom: 0.5em;
+	margin-top: 0.5em !important;
+	margin-bottom: 0.5em !important;
 }
 
 div.apperror {
@@ -279,4 +288,84 @@ div.appok {
 	background: #cfc;
 	border: solid 1px #090;
 	color: #090;
+}
+
+#about .ui-panel-inner {
+	padding-top: 0px;
+}
+
+#about h2 {
+	margin-top: 1em;
+}
+
+/**************************************************************************************************************************************/
+.ui-panel {
+	width: 35em;
+}
+
+.ui-panel.ui-panel-position-right {
+	width: 35em;
+}
+
+.ui-panel.ui-panel-closed {
+	width: 0;
+}
+
+.ui-panel-position-left {
+	left: -35em
+}
+
+.ui-panel-animate.ui-panel-position-left.ui-panel-display-overlay,.ui-panel-animate.ui-panel-position-left.ui-panel-display-push
+	{
+	-webkit-transform: translate3d(-35em, 0, 0);
+	-moz-transform: translate3d(-35em, 0, 0);
+	transform: translate3d(-35em, 0, 0)
+}
+
+.ui-panel-position-right {
+	right: -35em
+}
+
+.ui-panel-animate.ui-panel-position-right.ui-panel-display-overlay,.ui-panel-animate.ui-panel-position-right.ui-panel-display-push
+	{
+	-webkit-transform: translate3d(35em, 0, 0);
+	-moz-transform: translate3d(35em, 0, 0);
+	transform: translate3d(35em, 0, 0)
+}
+
+.ui-panel-content-fixed-toolbar-position-left.ui-panel-content-fixed-toolbar-open,.ui-panel-content-wrap-position-left.ui-panel-content-wrap-open,.ui-panel-dismiss-position-left.ui-panel-dismiss-open
+	{
+	left: 35em;
+	right: -35em
+}
+
+.ui-panel-animate.ui-panel-content-fixed-toolbar-position-left.ui-panel-content-fixed-toolbar-open.ui-panel-content-fixed-toolbar-display-reveal,.ui-panel-animate.ui-panel-content-fixed-toolbar-position-left.ui-panel-content-fixed-toolbar-open.ui-panel-content-fixed-toolbar-display-push,.ui-panel-animate.ui-panel-content-wrap-position-left.ui-panel-content-wrap-open.ui-panel-content-wrap-display-reveal,.ui-panel-animate.ui-panel-content-wrap-position-left.ui-panel-content-wrap-open.ui-panel-content-wrap-display-push
+	{
+	-webkit-transform: translate3d(35em, 0, 0);
+	-moz-transform: translate3d(35em, 0, 0);
+	transform: translate3d(35em, 0, 0)
+}
+
+.ui-panel-content-fixed-toolbar-position-right.ui-panel-content-fixed-toolbar-open,.ui-panel-content-wrap-position-right.ui-panel-content-wrap-open,.ui-panel-dismiss-position-right.ui-panel-dismiss-open
+	{
+	left: -35em;
+	right: 35em
+}
+
+.ui-panel-animate.ui-panel-content-fixed-toolbar-position-right.ui-panel-content-fixed-toolbar-open.ui-panel-content-fixed-toolbar-display-reveal,.ui-panel-animate.ui-panel-content-fixed-toolbar-position-right.ui-panel-content-fixed-toolbar-open.ui-panel-content-fixed-toolbar-display-push,.ui-panel-animate.ui-panel-content-wrap-position-right.ui-panel-content-wrap-open.ui-panel-content-wrap-display-reveal,.ui-panel-animate.ui-panel-content-wrap-position-right.ui-panel-content-wrap-open.ui-panel-content-wrap-display-push
+	{
+	-webkit-transform: translate3d(-35em, 0, 0);
+	-moz-transform: translate3d(-35em, 0, 0);
+	transform: translate3d(-35em, 0, 0)
+}
+
+@media ( min-width :55em) {
+	.ui-responsive-panel.ui-page-panel-open .ui-panel-content-fixed-toolbar-display-push.ui-panel-content-fixed-toolbar-position-left,.ui-responsive-panel.ui-page-panel-open .ui-panel-content-fixed-toolbar-display-reveal.ui-panel-content-fixed-toolbar-position-left,.ui-responsive-panel.ui-page-panel-open .ui-panel-content-wrap-display-push.ui-panel-content-wrap-position-left,.ui-responsive-panel.ui-page-panel-open .ui-panel-content-wrap-display-reveal.ui-panel-content-wrap-position-left
+		{
+		margin-right: 35em
+	}
+	.ui-responsive-panel.ui-page-panel-open .ui-panel-content-fixed-toolbar-display-push.ui-panel-content-fixed-toolbar-position-right,.ui-responsive-panel.ui-page-panel-open .ui-panel-content-fixed-toolbar-display-reveal.ui-panel-content-fixed-toolbar-position-right,.ui-responsive-panel.ui-page-panel-open .ui-panel-content-wrap-display-push.ui-panel-content-wrap-position-right,.ui-responsive-panel.ui-page-panel-open .ui-panel-content-wrap-display-reveal.ui-panel-content-wrap-position-right
+		{
+		margin-left: 35em
+	}
 }
